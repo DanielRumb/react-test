@@ -1,0 +1,10 @@
+---
+- name: Test ping
+  hosts: all
+  gather_facts: false
+  become: false
+  
+  tasks:
+  - name: Pinging Host
+    net_ping:
+      dest: 158.160.104.159
